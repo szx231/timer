@@ -47,13 +47,6 @@ resetButton.addEventListener('click', () =>{
 })
 
 
-resultsclear.addEventListener('click', () => {
-  while (resultBlockValue.firstChild) {
-    resultBlockValue.removeChild(resultBlockValue.firstChild);
-}
-})
-
-
 const resultArray = [];
 resultButton.addEventListener('click', () => {
   clearInterval(interval);
@@ -64,7 +57,20 @@ resultButton.addEventListener('click', () => {
   resultitem.style.top = resultitem.top + 20 + '%';
   resultArray.push(resultitem);
   resultBlockValue.append(resultitem);
-  console.log(resultArray);
+  }
+})
+
+
+resultsclear.addEventListener('click', () => {
+  while (resultBlockValue.firstChild) {
+    resultBlockValue.removeChild(resultBlockValue.firstChild);
+}
+  for(let i = 0; i < resultArray.length; i++) {
+    if(resultArray.length > 0) {
+      resultArray.forEach(elem => {
+        resultArray.pop();
+      })
+    }
   }
 })
 
