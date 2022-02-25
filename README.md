@@ -1,1 +1,17 @@
-[![Project test & build](https://github.com/scrappyjs666/timer/actions/workflows/main.yml/badge.svg)](https://github.com/scrappyjs666/timer/actions/workflows/main.yml)
+## Установка
+Для запуска необходим node.js
+Скачать отсюда https://nodejs.org/en/ lts версию
+
+После установки, открыть в консоли папку с проектом и установить все зависимости
+> npm i
+
+## Разработка
+> npm run dev
+
+## Сборка
+
+> npm run build
+
+## Запуск сборки в браузере
+
+> npm run preview

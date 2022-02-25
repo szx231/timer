@@ -1,0 +1,10 @@
+/* @font-face шрифтов */
+
+
+@font-face {
+  font-family: 'Minor';
+  src: url('/fonts/canis minor.woff'),
+  url('/fonts/canis minor.woff2');
+  font-style: normal;
+  font-display: swap;
+}
