@@ -2,6 +2,7 @@
 import '../styles/style.css'
 
 import './includes/test'
+import VanillaTilt from 'vanilla-tilt';
 
 const hourElement = document.querySelector('.hour');
 const minuteElement = document.querySelector('.minute');
